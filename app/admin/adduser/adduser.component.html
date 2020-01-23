@@ -1,0 +1,44 @@
+<h1 style="text-align: center">User Registeration Form</h1>
+
+<div class="row" >
+  <div class="col-md-3"></div>
+  <div class="col-md-6">
+    <div class="form-group">
+      <label for="">Full Name</label>
+      <input [(ngModel)]="user.name" type="text" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="">Email</label>
+      <input [(ngModel)]="user.email" type="email" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="">Phone</label>
+      <input [(ngModel)]="user.phoneno" type="text" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="">City</label>
+      <input [(ngModel)]="user.city" type="text" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="">State</label>
+      <input [(ngModel)]="user.state" type="text" class="form-control" >
+    </div>
+
+    <div class="form-group">
+        <label for="">Country</label>
+        <input [(ngModel)]="user.country" type="text" class="form-control">
+    </div>
+      
+    <div class="form-group">
+        <label for="">Password</label>
+        <input [(ngModel)]="user.password" type="password" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="">Role</label>
+      <input [(ngModel)]="user.role" type="text" class="form-control">
+    </div>
+    <div class="form-group" style="text-align: center;">
+        <button (click)="onRegister()" class="btn btn-success">Register</button>
+    </div>
+  </div>
+</div>

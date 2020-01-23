@@ -1,0 +1,61 @@
+<h1 style="text-align: center"> Case Registeration Form</h1>
+
+<div class="row" >
+  <div class="col-md-3"></div>
+  <div class="col-md-6">
+    <div class="form-group">
+      <label for="">Full Name</label>
+      <input [(ngModel)]="vicadd.name" type="text" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="">Age</label>
+      <input [(ngModel)]="vicadd.age" type="number" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="">Height(in feet)</label>
+      <input [(ngModel)]="vicadd.height" type="text" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="">City</label>
+      <input [(ngModel)]="vicadd.city" type="text" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="">State</label>
+      <input [(ngModel)]="vicadd.state" type="text" class="form-control" >
+    </div>
+
+    <div class="form-group">
+        <label for="">Country</label>
+        <input [(ngModel)]="vicadd.country" type="text" class="form-control">
+      </div>
+    <div class="form-group">
+        <label for="">Blood Group</label>
+        <input [(ngModel)]="vicadd.bgrp" type="text" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="">Gender</label>
+        <input type="radio" value="MALE" [(ngModel)]="vicadd.gender">Male 
+        <input type="radio" value="FEMALE"[(ngModel)]="vicadd.gender">Female
+      </div>
+      <div class="form-group">
+        <label for="">Phone No</label>
+        <input type="number" [(ngModel)]="vicadd.phno" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="">Date Of Birth(yyyy-MM-dd)</label>
+        <input [(ngModel)]="vicadd.dob" type="text" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="">Missing Date(yyyy-MM-dd)</label>
+        <input [(ngModel)]="vicadd.missingDate" type="text" class="form-control">
+      </div>
+      
+      <div class="form-group">
+        <label for="">Complainant Number</label>
+        <input [(ngModel)]="vicadd.cmpNo" type="text" class="form-control">
+      </div>
+    <div class="form-group" style="text-align: center;">
+        <button (click)="onRegister()" class="btn btn-success">Register</button>
+    </div>
+  </div>
+</div>
