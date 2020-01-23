@@ -21,6 +21,7 @@ export class EdituserComponent implements OnInit {
 
   OnSave()
   {
+    debugger;
     let observableResult=this.service.EditUser(localStorage.getItem("userid"),this.user);
     observableResult.subscribe((result)=>{
       this.a=result

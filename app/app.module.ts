@@ -29,6 +29,7 @@ import { EdituserComponent } from './admin/edituser/edituser.component';
 import { ShowusersComponent } from './police/showusers/showusers.component';
 import { EditprofileComponent } from './police/editprofile/editprofile.component';
 import { NgoshowusersComponent } from './ngo/ngoshowusers/ngoshowusers.component';
+import { NgosearchComponent } from './ngo/ngosearch/ngosearch.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -53,7 +54,8 @@ import { NgoshowusersComponent } from './ngo/ngoshowusers/ngoshowusers.component
     EdituserComponent,
     ShowusersComponent,
     EditprofileComponent,
-    NgoshowusersComponent
+    NgoshowusersComponent,
+    NgosearchComponent,
   ],
   imports: [
     BrowserModule,
@@ -83,7 +85,8 @@ import { NgoshowusersComponent } from './ngo/ngoshowusers/ngoshowusers.component
       {path:"edituser",component:EdituserComponent},
       {path:"showusers",component:ShowusersComponent},
       {path:"editprofile",component:EditprofileComponent},
-      {path:"ngoshow",component:NgoshowusersComponent}
+      {path:"ngoshow",component:NgoshowusersComponent},
+      {path:"ngosearch",component:NgosearchComponent}
     ])
     
   ],

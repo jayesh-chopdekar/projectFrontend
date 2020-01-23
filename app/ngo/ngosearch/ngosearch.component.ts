@@ -4,11 +4,12 @@ import { DataService } from 'src/app/data.service';
 import { isNull } from 'util';
 
 @Component({
-  selector: 'app-search',
-  templateUrl: './search.component.html',
-  styleUrls: ['./search.component.css']
+  selector: 'app-ngosearch',
+  templateUrl: './ngosearch.component.html',
+  styleUrls: ['./ngosearch.component.css']
 })
-export class SearchComponent implements OnInit {
+export class NgosearchComponent implements OnInit {
+
   vname:any;
   userlist:any;
   
@@ -26,13 +27,13 @@ export class SearchComponent implements OnInit {
       if(isNull(this.userlist))
       {
         alert('unsuccessful');
-        this.router.navigate(['/police']);
+        this.router.navigate(['/ngo']);
       }
-      
     })
   }
   OnHome()
   {
-    this.router.navigate(['/police']);
+    this.router.navigate(['/ngo']);
   }
+
 }
