@@ -1,5 +1,37 @@
 <h3>Registered Cases</h3>
 <br>
+<br>
+<div class="container" style=" width: 96%;height: 130px;" >
+    <div class="col-md-2">
+     <img src="assets/logo.png" style="height:150px; width: 150px;">
+    </div>
+    <div class="col-md-9" style="font-family: 'Times New Roman', Times, serif;font-size: large;">
+    <h1>Government Of India</h1>
+    <h2>Anti-Trafficking Portal</h2>
+   </div>
+   </div>
+<br>
+<nav class="navbar navbar-inverse" style="left: 2%; width: 96%;">
+        <div class="container-fluid">
+           <div class="navbar-header">
+             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button> 
+          </div> 
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li class="active"><a routerLink="/ngo">Home</a></li>
+              <li><a routerLink="/ngcases">Cases</a></li>
+              <li><a routerLink="/ngosearch">Search</a></li>
+              <li><a routerLink="/ngoinbox">Inbox</a></li>
+              <li><a routerLink="/ngoshow">Show Users</a></li>
+              <li><input type="button" class="btn btn-danger" value="logout" (click)="logout()" style="height:50px;left: 1250px;" ></li>
+            </ul>
+          </div>          
+        </div>
+      </nav>
 <div class="table-responsive">
     <table class="table">
       <tr>
@@ -14,7 +46,7 @@
         <td>{{user.name}}</td>
         <td>{{user.height}}</td>
         <td>{{user.age}}</td>
-        <td>{{user.img}}</td>
+        <td><img src="data:image/gif;base64,{{user.img}}" alt="" style="height: 40px;width: 40px;"></td>
           </tr>
     </table>
   </div><br>

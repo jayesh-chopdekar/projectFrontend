@@ -13,9 +13,9 @@ export class DataService {
     return this.helper.post("http://localhost:8080/Project/user/login",credentials);
   }
 
-  RegCase(vicadd)
+  RegCase(formData)
   {
-    return this.helper.post("http://localhost:8080/Project/police/regcase",vicadd);
+    return this.helper.post("http://localhost:8080/Project/police/regcase",formData);
   }
   ShowCases()
   {

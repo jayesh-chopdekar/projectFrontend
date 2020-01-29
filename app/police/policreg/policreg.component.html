@@ -34,28 +34,24 @@
       </div>
       <div class="form-group">
         <label for="">Department City</label>
-        <input [(ngModel)]="pol.deptcity" type="text" class="form-control">
+        <input [(ngModel)]="pol.deptCity" type="text" class="form-control">
       </div>
       <div class="form-group">
         <label for="">Department State</label>
-        <input [(ngModel)]="pol.deptstate" type="text" class="form-control">
+        <input [(ngModel)]="pol.deptState" type="text" class="form-control">
       </div>
       <div class="form-group">
         <label for="">Department Country</label>
-        <input [(ngModel)]="pol.deptcountry" type="text" class="form-control">
+        <input [(ngModel)]="pol.deptCountry" type="text" class="form-control">
       </div>
       <div class="form-group">
         <label for="">Department Contact No</label>
-        <input [(ngModel)]="pol.deptphoneno" type="text" class="form-control">
+        <input [(ngModel)]="pol.deptPhoneno" type="text" class="form-control">
       </div>
       
     <div class="form-group">
         <label for="">Password</label>
         <input [(ngModel)]="pol.password" type="password" class="form-control">
-      </div>
-      <div class="form-group">
-        <label for="">Image</label>
-        <input (change)="OnSelectFile($event)" type="file" class="form-control">
       </div>
     <div class="form-group" style="text-align: center;">
         <button (click)="onRegister()" class="btn btn-success">Register</button>

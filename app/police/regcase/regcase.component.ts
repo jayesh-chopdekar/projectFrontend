@@ -10,6 +10,7 @@ import { isNull } from 'util';
 })
 export class RegcaseComponent implements OnInit {
   vicadd={name:"",age:"",height:"",bgrp:"",city:"",state:"",country:"",gender:"",phno:"",dob:"",missingDate:"",cmpNo:""}
+  userfile:any=File;
   a:any;
   constructor(private router:Router,
               private service:DataService) { }
@@ -19,7 +20,10 @@ export class RegcaseComponent implements OnInit {
   onRegister()
   {
     debugger;
-    let observableResult=this.service.RegCase(this.vicadd)
+    const formData=new FormData();
+    formData.append("vicadd",JSON.stringify(this.vicadd))
+    formData.append("file",this.userfile)
+    let observableResult=this.service.RegCase(formData)
     observableResult.subscribe((result)=>{
       this.a=result
       if(!isNull(this.a))
@@ -32,5 +36,10 @@ export class RegcaseComponent implements OnInit {
         alert('case reg unsu');
       }
     })
+  }
+  OnSelectFile(event)
+  {
+    const file=event.target.files[0];
+    this.userfile=file
   }
 }

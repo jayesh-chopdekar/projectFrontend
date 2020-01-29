@@ -1,3 +1,38 @@
+<br>
+<div class="container" style=" width: 96%;height: 130px;" >
+ <div class="col-md-3">
+  <img src="assets/logo.png" style="height:150px; width: 150px;">
+ </div>
+ <div class="col-md-8" style="font-family: 'Times New Roman', Times, serif;font-size: large;">
+ <h1>Government Of India</h1>
+ <h2>Anti-Trafficking Portal</h2>
+</div>
+</div>
+<br>
+<nav class="navbar navbar-inverse" style="left: 2%; width: 96%;">
+        <div class="container-fluid">
+           <div class="navbar-header">
+             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button> 
+          </div> 
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li class="active"><a routerLink="/police">Home</a></li>
+              <li><a  routerLink="/regcase">Register Case</a></li>
+              <li><a  routerLink="/cases">Cases</a></li>
+              <li><a  routerLink="/search">Search</a></li>
+              <li><a  routerLink="/policeinbox">Inbox</a></li>
+              <li><a routerLink="/editprofile">Edit Profile</a></li>
+              <li><a routerLink="/showusers">Show Users</a></li>
+              <li><input type="button" class="btn btn-danger" value="logout" (click)="logout()" style="height:50px;left: 1250px;" ></li>
+            </ul>
+          </div>
+
+        </div>
+      </nav>
 <h1 style="text-align: center"> Case Registeration Form</h1>
 
 <div class="row" >
@@ -54,6 +89,11 @@
         <label for="">Complainant Number</label>
         <input [(ngModel)]="vicadd.cmpNo" type="text" class="form-control">
       </div>
+      <div class="form-group">
+        <label for="">Image</label>
+        <input (change)="OnSelectFile($event)" type="file" class="form-control">
+      </div>
+
     <div class="form-group" style="text-align: center;">
         <button (click)="onRegister()" class="btn btn-success">Register</button>
     </div>

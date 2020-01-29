@@ -11,9 +11,8 @@ import { isNull } from 'util';
 export class PolicregComponent implements OnInit 
 {
   pol={name:"",email:"",phoneno:"",city:"",state:"",country:"",password:"",
-  deptName:"",deptcity:"",deptstate:"",deptcountry:"",deptphoneno:""}
+  deptName:"",deptCity:"",deptState:"",deptCountry:"",deptPhoneno:""}
   a:any;
-  file:any=File;
   constructor(private router:Router,
               private service:DataService) { }
 
@@ -23,10 +22,7 @@ export class PolicregComponent implements OnInit
   onRegister()
   {
     debugger;
-    const formData=new FormData();
-    formData.append('pol',JSON.stringify(this.pol));
-    formData.append('poli',this.file);
-    let observableResult=this.service.AddPolice(formData);
+    let observableResult=this.service.AddPolice(this.pol);
     observableResult.subscribe((result)=>{
       this.a=result;
       if(!isNull(this.a))
@@ -39,10 +35,5 @@ export class PolicregComponent implements OnInit
         alert('registration unsuccessful');
       }
     })
-  }
-  OnSelectFile(event)
-  {
-    this.file=event.target.files[0];
-
   }
 }

@@ -16,95 +16,117 @@
 </div>
 </div> -->
 <br>
-<div class="container" style=" width: 96%;height: 130px;" >
-    <div class="col-md-2">
-     <img src="assets/logo.png" style="height:150px; width: 150px;">
-    </div>
-    <div class="col-md-9" style="font-family: 'Times New Roman', Times, serif;font-size: large;">
+<div class="container" style=" width: 96%;height: 130px;">
+  <div class="col-md-2">
+    <img src="assets/logo.png" style="height:150px; width: 150px;">
+  </div>
+  <div class="col-md-9" style="font-family: 'Times New Roman', Times, serif;font-size: large;">
     <h1>Government Of India</h1>
     <h2>Anti-Trafficking Portal</h2>
-   </div>
-   </div>
-   <br>
+  </div>
+</div>
+<br>
 <nav class="navbar navbar-inverse" style="left: 2%; width: 96%;">
-        <div class="container-fluid">
-           <div class="navbar-header">
-             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>                        
-            </button> 
-          </div> 
-          <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav">
-              <li class="active"><a routerLink="/home">Home</a></li>
-              <li><a routerLink="/gallery">Gallery</a></li>
-              <li><a routerLink="/stat">Statistics</a></li>
-              <li><a routerLink="/org">Orgnisations</a></li>
-              <li><a routerLink="/about">About us</a></li>
-            </ul>
-            
-          </div>
-        </div>
-      </nav>
-      <div class="col-md-3 text-left">
-      <div class="container-fluid text-center">    
-        <div class="row content">
-          
-          <legend>Login Here</legend>
-          <div class="form-group">
-            <label for="Email" >UserName</label>
-          <input type="text" class="form-control" id="email" name="email" placeholder="email"
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a routerLink="/home">Home</a></li>
+        <li><a routerLink="/gallery">Gallery</a></li>
+        <li><a routerLink="/stat">Statistics</a></li>
+        <li><a routerLink="/org">Orgnisations</a></li>
+        <li><a routerLink="/about">About us</a></li>
+      </ul>
+
+    </div>
+  </div>
+</nav>
+<div class="col-md-3 text-left">
+  <div class="container-fluid text-center">
+    <div class="row content">
+
+      <legend>Login Here</legend>
+      <div class="form-group">
+        <label for="Email">UserName</label>
+        <input type="text" class="form-control" id="email" name="email" placeholder="email"
           [(ngModel)]="credentials.email">
-           </div>
-      
-        <div class="form-group">
-          <label for="password">Password</label>
-          <input type="password" class="form-control" id="password" name="password" placeholder="password"
-          [(ngModel)]="credentials.password">
-        </div>
-        <div class="form-group" style="text-align: center;">
-            <table style="text-align: center;">
-                <tr>
-                    <td style="position: static;" > <button type="button" (click)="SignIn()" class="btn btn-primary " style="width: 310px;">Sign in</button></td>
-                </tr>
-                <br>
-                <tr> 
-                  <td ><button type="button" class="btn btn-success " (click)="RegisterAsPolice()" style="width: 310px">Register as Police</button></td>
-                </tr>
-        
-                <br>
-                <tr> 
-                  <td ><button type="button" class="btn btn-success " (click)="RegisterAsNgo()"style="width: 310px;">Register as Ngo</button></td>
-                </tr>
-            </table> 
-         </div>
-            <br><br>  
-            <span class="label label-danger" id="loginMessage">{{message}}</span>
-          </div>
-              </div>
       </div>
-          <div class="col-md-6"> 
-            
-            <div class="jumbotron">
-              <div class="container">
-                <h1>Welcome..</h1>
-                <p style="text-align: justify;"> This portal is help to manage human anti-trafficking
-                    cases for police and releated NGO's.  </p>
-                  <h3 style="font-weight: 600;"> What is Human Trafficking ?</h3>
-                  <p> ...static data...</p>
-              </div>
-            </div>
-          </div>
-            <div class="col-md-3">
-              <div class="jumbotron" style="text-align: left;">
-                <h2>Helpline</h2>
-                <p> Contacts to be added... </p>
-                </div>
-            </div>
-  
-      <div class="col-md-12">
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" id="password" name="password" placeholder="password"
+          [(ngModel)]="credentials.password">
+      </div>
+      <div class="form-group" style="text-align: center;">
+        <table style="text-align: center;">
+          <tr>
+            <td style="position: static;"> <button type="button" (click)="SignIn()" class="btn btn-primary "
+                style="width: 310px;">Sign in</button></td>
+          </tr>
+          <br>
+          <tr>
+            <td><button type="button" class="btn btn-success " (click)="RegisterAsPolice()"
+                style="width: 310px">Register as Police</button></td>
+          </tr>
+
+          <br>
+          <tr>
+            <td><button type="button" class="btn btn-success " (click)="RegisterAsNgo()" style="width: 310px;">Register
+                as Ngo</button></td>
+          </tr>
+        </table>
+        <br><br>
+        <div class="jumbotron" style="text-align: left;">
+          <h2>Helpline</h2>
+          <p> NHRC TOLL FREE HELP LINE No. : 14433</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="col-md-9">
+
+      <div class="jumbotron">
+        <div class="container">
+          <h1>Welcome..</h1>
+          <p style="text-align: justify;"> This portal developed for managing human anti-trafficking
+            cases for police and releated NGO's. </p>
+          <h3 style="font-weight: 600;"> What is Human Trafficking ?</h3>
+          <p style="font-size: 15px;"> An estimated 40 million people are in modern slavery all over the world. This
+            generates an estimated $150 billion in illegal profits every year, making forced labor the second largest
+            international crime.
+            Bonded labour or debt bondage is when a workers’ labor is demanded to repay a loan. The person is usually
+            coerced into working long after the loan is repaid. Often, the debt is passed on to the next generation.</p>
+          <p style="font-size: 15px;"> Forced labor is any work which people are forced to do against their will. 16
+            million, or 64% of of people in forced labor are in the private economy, exploited by individuals or
+            enterprises. According to the United Nations International Labour Organization (ILO) there are 24,900,000
+            people in forced labour.
+            Child slavery is one of the most shocking forms of slavery. Worldwide it is estimated that that one in four
+            victims of slavery are children. Children’s labour is exploited in many jobs, including physical labor and
+            domestic slavery.
+            Live-in migrant domestic workers are particularly vulnerable to exploitation because, confined to a private
+            home, they are isolated from protections offered in a regular workplace.
+            Child marriage can be another form of slavery, if the following three elements are present: if either party
+            hasn’t given their free and informed consent, if either party is being subjected to control and a sense of
+            ownership, and if either party cannot realistically leave or end the marriage. Servile marriage can affect
+            adults too.
+          </p>
+          <p style="font-size: 15px;"> "Human trafficking is the act of recruiting or transferring a person by means of
+            coercion, abduction or deception for the purpose of exploitation. Although most people assume sexual
+            exploitation to be the most common reason for trafficking people, it is in fact for forced labor."</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-12">
       <footer class="container-fluid text-center">
         <p>This portal is developed for CDAC project by Jayesh Chopdekar</p>
-      </footer>  
+      </footer>
     </div>

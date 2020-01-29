@@ -14,7 +14,6 @@ import { AdminComponent } from './admin/admin/admin.component';
 import { PolicregComponent } from './police/policreg/policreg.component';
 import { NgoregComponent } from './ngo/ngoreg/ngoreg.component';
 import { GalleryComponent } from './home/gallery/gallery.component';
-import { StatComponent } from './home/stat/stat.component';
 import { OrgComponent } from './home/org/org.component';
 import { AboutusComponent } from './home/aboutus/aboutus.component';
 import { RegcaseComponent } from './police/regcase/regcase.component';
@@ -25,7 +24,6 @@ import { NgoinboxComponent } from './ngo/ngoinbox/ngoinbox.component';
 import { UsersComponent } from './admin/users/users.component';
 import { AdduserComponent } from './admin/adduser/adduser.component';
 import { AdmininboxComponent } from './admin/admininbox/admininbox.component';
-import { EdituserComponent } from './admin/edituser/edituser.component';
 import { ShowusersComponent } from './police/showusers/showusers.component';
 import { EditprofileComponent } from './police/editprofile/editprofile.component';
 import { NgoshowusersComponent } from './ngo/ngoshowusers/ngoshowusers.component';
@@ -47,7 +45,6 @@ import { VerifyComponent } from './admin/verify/verify.component';
     PolicregComponent,
     NgoregComponent,
     GalleryComponent,
-    StatComponent,
     OrgComponent,
     AboutusComponent,
     RegcaseComponent,
@@ -58,7 +55,6 @@ import { VerifyComponent } from './admin/verify/verify.component';
     UsersComponent,
     AdduserComponent,
     AdmininboxComponent,
-    EdituserComponent,
     ShowusersComponent,
     EditprofileComponent,
     NgoshowusersComponent,
@@ -85,7 +81,6 @@ import { VerifyComponent } from './admin/verify/verify.component';
       {path:"policereg",component:PolicregComponent},
       {path:"ngoreg",component:NgoregComponent},
       {path:"gallery",component:GalleryComponent},
-      {path:"stat",component:StatComponent},
       {path:"org",component:OrgComponent},
       {path:"about",component:AboutusComponent},
       {path:"regcase",component:RegcaseComponent},
@@ -96,7 +91,6 @@ import { VerifyComponent } from './admin/verify/verify.component';
       {path:"users",component:UsersComponent},
       {path:"adduser",component:AdduserComponent},
       {path:"admininbox",component:AdmininboxComponent},
-      {path:"edituser",component:EdituserComponent},
       {path:"showusers",component:ShowusersComponent},
       {path:"editprofile",component:EditprofileComponent},
       {path:"ngoshow",component:NgoshowusersComponent},

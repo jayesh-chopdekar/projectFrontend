@@ -8,12 +8,12 @@ import { AuthService } from 'src/app/auth.service';
 })
 export class PolicehomeComponent implements OnInit {
 
-  constructor(private service:AuthService) { }
+  constructor(private authservice:AuthService) { }
 
   ngOnInit() {
   }
   logout()
   {
-    this.service.Logout();
+    this.authservice.Logout();
   }
 }
