@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { DataService } from 'src/app/data.service';
+import { isNull } from 'util';
 
 @Component({
   selector: 'app-admininbox',
@@ -7,9 +10,31 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdmininboxComponent implements OnInit {
 
-  constructor() { }
+  mesglist:any;
+  a:any;
 
-  ngOnInit() {
+  constructor(private router:Router,
+              private service:DataService) { }
+
+  ngOnInit()
+   {
+     debugger;
+    this.a=localStorage.getItem("id");
+    let observableResult=this.service.Inbox(this.a);
+    observableResult.subscribe((result)=>{
+      if(!isNull(result))
+      {
+        this.mesglist=result;
+      }
+      else
+      {
+        alert('Inbox empty');
+      }
+    })
+  }
+  OnHome()
+  {
+    this.router.navigate(['/admin'])
   }
 
 }

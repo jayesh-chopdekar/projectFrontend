@@ -37,9 +37,9 @@ export class DataService {
   {
     return this.helper.post("http://localhost:8080/Project/ngo/ngoadd",ngo);
   }
-  AddPolice(pol)
+  AddPolice(formData)
   {
-    return this.helper.post("http://localhost:8080/Project/police/poladd",pol);
+    return this.helper.post("http://localhost:8080/Project/police/poladd",formData);
   }
   RemUser(id)
   {
@@ -48,5 +48,30 @@ export class DataService {
   EditUser(id,user)
   {
     return this.helper.put("http://localhost:8080/Project/admin/edituser/"+id,user);
+  }
+  SearchUser(name)
+  {
+    debugger;
+    return this.helper.get("http://localhost:8080/Project/admin/searchuser/"+name);
+  }
+  EditPolice(id,user)
+  {
+    return this.helper.put("http://localhost:8080/Project/police/editpol/"+id,user);
+  }
+  Inbox(id)
+  {
+    return this.helper.get("http://localhost:8080/Project/user/inbox/"+id);
+  }
+  SendMsg(msg)
+  {
+    return this.helper.post("http://localhost:8080/Project/user/send",msg);
+  }
+  UnVer()
+  {
+    return this.helper.get("http://localhost:8080/Project/admin/request");
+  }
+  Verify(uid)
+  {
+    return this.helper.get("http://localhost:8080/Project/admin/verify/"+uid);
   }
 }

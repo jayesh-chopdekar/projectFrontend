@@ -30,6 +30,13 @@ import { ShowusersComponent } from './police/showusers/showusers.component';
 import { EditprofileComponent } from './police/editprofile/editprofile.component';
 import { NgoshowusersComponent } from './ngo/ngoshowusers/ngoshowusers.component';
 import { NgosearchComponent } from './ngo/ngosearch/ngosearch.component';
+import { AdsearchComponent } from './admin/adsearch/adsearch.component';
+import { AdusersearchComponent } from './admin/adusersearch/adusersearch.component';
+import { AdmincomposeComponent } from './admin/admincompose/admincompose.component';
+import { NgocomposeComponent } from './ngo/ngocompose/ngocompose.component';
+import { PolicecomposeComponent } from './police/policecompose/policecompose.component';
+import { NgcasesComponent } from './ngo/ngcases/ngcases.component';
+import { VerifyComponent } from './admin/verify/verify.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -56,6 +63,13 @@ import { NgosearchComponent } from './ngo/ngosearch/ngosearch.component';
     EditprofileComponent,
     NgoshowusersComponent,
     NgosearchComponent,
+    AdsearchComponent,
+    AdusersearchComponent,
+    AdmincomposeComponent,
+    NgocomposeComponent,
+    PolicecomposeComponent,
+    NgcasesComponent,
+    VerifyComponent,
   ],
   imports: [
     BrowserModule,
@@ -86,7 +100,14 @@ import { NgosearchComponent } from './ngo/ngosearch/ngosearch.component';
       {path:"showusers",component:ShowusersComponent},
       {path:"editprofile",component:EditprofileComponent},
       {path:"ngoshow",component:NgoshowusersComponent},
-      {path:"ngosearch",component:NgosearchComponent}
+      {path:"ngosearch",component:NgosearchComponent},
+      {path:"adsearch",component:AdsearchComponent},
+      {path:"adusersearch",component:AdusersearchComponent},
+      {path:"adcompose",component:AdmincomposeComponent},
+      {path:"ngocompose",component:NgocomposeComponent},
+      {path:"polcompose",component:PolicecomposeComponent},
+      {path:"ngcases",component:NgcasesComponent},
+      {path:"request",component:VerifyComponent}
     ])
     
   ],

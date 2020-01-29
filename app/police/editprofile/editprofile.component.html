@@ -1,1 +1,41 @@
-<p>editprofile works!</p>
+<h1 style="text-align: center">Edit Profile</h1>
+
+<div class="row" >
+  <div class="col-md-3"></div>
+  <div class="col-md-6">
+    <div class="form-group">
+      <label for="">Full Name</label>
+      <input [(ngModel)]="user.name" type="text" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="">Email</label>
+      <input [(ngModel)]="user.email" type="email" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="">Phone</label>
+      <input [(ngModel)]="user.phoneno" type="text" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="">City</label>
+      <input [(ngModel)]="user.city" type="text" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="">State</label>
+      <input [(ngModel)]="user.state" type="text" class="form-control" >
+    </div>
+
+    <div class="form-group">
+        <label for="">Country</label>
+        <input [(ngModel)]="user.country" type="text" class="form-control">
+    </div>
+      
+    <div class="form-group">
+        <label for="">Password</label>
+        <input [(ngModel)]="user.password" type="password" class="form-control">
+    </div>
+    <div class="form-group" style="text-align: center;">
+        <button (click)="OnSave()" class="btn btn-success">Save</button>
+    </div>
+  </div>
+</div>
+

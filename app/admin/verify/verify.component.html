@@ -15,9 +15,8 @@
         <td>{{user.email}}</td>
         <td>{{user.role}}</td>
         <td>{{user.image}}</td>
-        <td><button (click)="OnEdit(user.id)" class="btn btn-warning">Edit</button></td>
+        <td><button (click)="OnVerify(user.id)" class="btn btn-warning">Verify</button></td>
         <td><button (click)="OnDelete(user.id)" class="btn btn-danger">Delete</button></td>
-        <td><button (click)="OnSend(user.email)" class="btn btn-primary">Send Message</button></td>
       </tr>
     </table>
     

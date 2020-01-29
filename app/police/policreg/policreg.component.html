@@ -5,53 +5,57 @@
   <div class="col-md-6">
     <div class="form-group">
       <label for="">Full Name</label>
-      <input [(ngModel)]="name" type="text" class="form-control">
+      <input [(ngModel)]="pol.name" type="text" class="form-control">
     </div>
     <div class="form-group">
       <label for="">Email</label>
-      <input [(ngModel)]="email" type="email" class="form-control">
+      <input [(ngModel)]="pol.email" type="email" class="form-control">
     </div>
     <div class="form-group">
       <label for="">Phone</label>
-      <input [(ngModel)]="phoneno" type="text" class="form-control">
+      <input [(ngModel)]="pol.phoneno" type="text" class="form-control">
     </div>
     <div class="form-group">
       <label for="">City</label>
-      <input [(ngModel)]="city" type="text" class="form-control">
+      <input [(ngModel)]="pol.city" type="text" class="form-control">
     </div>
     <div class="form-group">
       <label for="">State</label>
-      <input [(ngModel)]="state" type="text" class="form-control" >
+      <input [(ngModel)]="pol.state" type="text" class="form-control" >
     </div>
 
     <div class="form-group">
         <label for="">Country</label>
-        <input [(ngModel)]="country" type="text" class="form-control">
+        <input [(ngModel)]="pol.country" type="text" class="form-control">
       </div>
     <div class="form-group">
         <label for="">Department Name</label>
-        <input [(ngModel)]="deptname" type="text" class="form-control">
+        <input [(ngModel)]="pol.deptName" type="text" class="form-control">
       </div>
       <div class="form-group">
         <label for="">Department City</label>
-        <input [(ngModel)]="deptcity" type="text" class="form-control">
+        <input [(ngModel)]="pol.deptcity" type="text" class="form-control">
       </div>
       <div class="form-group">
         <label for="">Department State</label>
-        <input [(ngModel)]="deptstate" type="text" class="form-control">
+        <input [(ngModel)]="pol.deptstate" type="text" class="form-control">
       </div>
       <div class="form-group">
         <label for="">Department Country</label>
-        <input [(ngModel)]="deptcountry" type="text" class="form-control">
+        <input [(ngModel)]="pol.deptcountry" type="text" class="form-control">
       </div>
       <div class="form-group">
         <label for="">Department Contact No</label>
-        <input [(ngModel)]="deptphoneno" type="text" class="form-control">
+        <input [(ngModel)]="pol.deptphoneno" type="text" class="form-control">
       </div>
       
     <div class="form-group">
         <label for="">Password</label>
-        <input [(ngModel)]="password" type="password" class="form-control">
+        <input [(ngModel)]="pol.password" type="password" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="">Image</label>
+        <input (change)="OnSelectFile($event)" type="file" class="form-control">
       </div>
     <div class="form-group" style="text-align: center;">
         <button (click)="onRegister()" class="btn btn-success">Register</button>

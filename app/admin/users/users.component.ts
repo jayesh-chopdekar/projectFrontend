@@ -10,8 +10,7 @@ import { isNull } from 'util';
 })
 export class UsersComponent implements OnInit {
 
-  userlist={id:"",name:"",email:"",role:"",image:""}
-  a:any;
+  userlist:any
   constructor(private router:Router,
               private service:DataService) { }
 
@@ -19,10 +18,10 @@ export class UsersComponent implements OnInit {
   {
     let observableResult=this.service.ShowUsers();
     observableResult.subscribe((result)=>{
-      this.a=result
-      if(!isNull(this.a))
+      
+      if(!isNull(result))
       {
-        this.userlist=this.a;
+        this.userlist=result;
       }
       else
       {
@@ -46,5 +45,9 @@ export class UsersComponent implements OnInit {
   {
     this.router.navigate(['/admin']);
   }
-
+  OnSend(email)
+  {
+    sessionStorage.setItem("useremail",email)
+    this.router.navigate(['adcompose'])
+  }
 }

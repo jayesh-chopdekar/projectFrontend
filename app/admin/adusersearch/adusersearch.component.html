@@ -1,0 +1,27 @@
+<h1>Search User</h1>
+<div class="form-group">
+    <input type="text" class="form-control" placeholder="Search User By Name" [(ngModel)]="uname">
+  </div>
+  <button type="button" (click)="OnSearch()" class="btn btn-default">Search By Name</button><br><br>
+<h2>Search Results</h2><br><br>
+<div>
+  <table class="table">
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Name</th>
+      <th scope="col">Height</th>
+      <th scope="col">Age</th>
+      <th scope="col">Image</th> 
+    </tr>
+    <tr *ngFor="let user of userlist">
+        <td>{{user.id}}</td>
+        <td>{{user.name}}</td>
+        <td>{{user.email}}</td>
+        <td>{{user.role}}</td>
+        <td>{{user.image}}</td>
+    </tr>
+</table>
+</div><br>
+<div>
+  <button (click)="OnHome()" class="btn btn-success">Back to Home</button>
+</div>

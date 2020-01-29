@@ -51,19 +51,43 @@ export class AuthService implements CanActivate {
       this.use=result;
       if(this.use!=null)
       {
-        if(this.use.role=="ADMIN")
+        if(this.use.role=="ADMIN" && this.use.ver=="V")
         {
           window.sessionStorage.setItem("isActive", "1");
+          localStorage.setItem("id",this.use.id);
+          localStorage.setItem('name',this.use.name)
+          localStorage.setItem('email',this.use.email)
+          localStorage.setItem('pass',this.use.password)
+          localStorage.setItem('city',this.use.city)
+          localStorage.setItem('state',this.use.state)
+          localStorage.setItem('country',this.use.country)
+          localStorage.setItem('phno',this.use.phoneno)
           this.router.navigate(['/admin'])
         }
-        else if(this.use.role=="POLICE")
+        else if(this.use.role=="POLICE" && this.use.ver=="V")
         {
           window.sessionStorage.setItem("isActive", "1");
+          localStorage.setItem("id",this.use.id);
+          localStorage.setItem('name',this.use.name)
+          localStorage.setItem('email',this.use.email)
+          localStorage.setItem('pass',this.use.password)
+          localStorage.setItem('city',this.use.city)
+          localStorage.setItem('state',this.use.state)
+          localStorage.setItem('country',this.use.country)
+          localStorage.setItem('phno',this.use.phoneno)
           this.router.navigate(['/police'])
         }
-        else if(this.use.role=="NGO")
+        else if(this.use.role=="NGO" && this.use.ver=="V")
       {
         window.sessionStorage.setItem("isActive", "1");
+        localStorage.setItem("id",this.use.id);
+        localStorage.setItem('name',this.use.name)
+        localStorage.setItem('email',this.use.email)
+        localStorage.setItem('pass',this.use.password)
+        localStorage.setItem('city',this.use.city)
+        localStorage.setItem('state',this.use.state)
+        localStorage.setItem('country',this.use.country)
+        localStorage.setItem('phno',this.use.phoneno)
         this.router.navigate(['/ngo'])
       }
       else
